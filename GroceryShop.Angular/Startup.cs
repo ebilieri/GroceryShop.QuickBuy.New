@@ -71,7 +71,7 @@ namespace GroceryShop.Angular
             // Configurar context banco de dados
             services.AddDbContext<QuickBuyContexto>(option =>
                     option.UseLazyLoadingProxies()
-                        .UseMySQL(connectionString, m =>
+                        .UseMySql(connectionString, ServerVersion.AutoDetect(connectionString), m =>
                             m.MigrationsAssembly("GroceryShop.Repositorio")));
 
             // Mapeamento Inje��o de dependencia HttpContextAccessor
@@ -135,7 +135,7 @@ namespace GroceryShop.Angular
                 if (env.IsDevelopment())
                 {
                     /*
-                     * Comentar linha para executar o angular diretamente do angulur cli (ng build)
+                     * Angular CLI habilitado - Node.js v24.12.0 instalado
                      * npm start - executar app
                      */
                     spa.UseAngularCliServer(npmScript: "start");
