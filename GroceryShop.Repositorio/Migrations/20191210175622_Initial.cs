@@ -1,6 +1,7 @@
-Ôªøusing System;
+using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using MySql.EntityFrameworkCore.Metadata;
 
 namespace GroceryShop.Repositorio.Migrations
 {
@@ -13,7 +14,7 @@ namespace GroceryShop.Repositorio.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(maxLength: 50, nullable: false),
                     Descricao = table.Column<string>(maxLength: 100, nullable: false)
                 },
@@ -27,7 +28,7 @@ namespace GroceryShop.Repositorio.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(maxLength: 100, nullable: false),
                     Descricao = table.Column<string>(nullable: false),
                     Preco = table.Column<decimal>(nullable: false)
@@ -42,7 +43,7 @@ namespace GroceryShop.Repositorio.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Email = table.Column<string>(maxLength: 100, nullable: false),
                     Senha = table.Column<string>(maxLength: 400, nullable: false),
                     Nome = table.Column<string>(maxLength: 50, nullable: false),
@@ -58,7 +59,7 @@ namespace GroceryShop.Repositorio.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     DataPedido = table.Column<DateTime>(nullable: false),
                     UsuarioId = table.Column<int>(nullable: false),
                     DataPrevisaoEntrega = table.Column<DateTime>(nullable: false),
@@ -91,7 +92,7 @@ namespace GroceryShop.Repositorio.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     PedidoId = table.Column<int>(nullable: false),
                     ProdutoId = table.Column<int>(nullable: false),
                     Quantidade = table.Column<int>(nullable: false)
@@ -115,12 +116,12 @@ namespace GroceryShop.Repositorio.Migrations
             migrationBuilder.InsertData(
                 table: "FormaPagamentos",
                 columns: new[] { "Id", "Descricao", "Nome" },
-                values: new object[] { 2, "Forma de pagamento Cart√£o de Cr√©dito", "Cart√£o de Cr√©dito" });
+                values: new object[] { 2, "Forma de pagamento Cart„o de CrÈdito", "Cart„o de CrÈdito" });
 
             migrationBuilder.InsertData(
                 table: "FormaPagamentos",
                 columns: new[] { "Id", "Descricao", "Nome" },
-                values: new object[] { 3, "Forma de pagamento Dep√≥sito", "Dep√≥sito" });
+                values: new object[] { 3, "Forma de pagamento DepÛsito", "DepÛsito" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_ItensPedidos_PedidoId",

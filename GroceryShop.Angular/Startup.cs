@@ -55,32 +55,29 @@ namespace GroceryShop.Angular
                 });
             });
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options => { options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore; });
+            
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            services.AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-
-            services.AddMvc().AddNewtonsoftJson(options => { options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore; });
-
-            // String de conexão com o Banco de dados (MySql)
+            // String de conexï¿½o com o Banco de dados (MySql)
             //var connectionString = Configuration.GetConnectionString("QuickByConnection");
             var connectionString = Configuration.GetConnectionString("QuickRemoteMysql");
 
             // Configurar context banco de dados
             services.AddDbContext<QuickBuyContexto>(option =>
                     option.UseLazyLoadingProxies()
-                        .UseMySql(connectionString, m =>
+                        .UseMySQL(connectionString, m =>
                             m.MigrationsAssembly("GroceryShop.Repositorio")));
 
-            // Mapeamento Injeção de dependencia HttpContextAccessor
+            // Mapeamento Injeï¿½ï¿½o de dependencia HttpContextAccessor
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            // Mapeamento Injeção de dependencia
+            // Mapeamento Injeï¿½ï¿½o de dependencia
             services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<IPedidoRepositorio, PedidoRepositorio>();
