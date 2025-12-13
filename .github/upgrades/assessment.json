@@ -1,0 +1,1102 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2025-12-13T01:17:58.4873702Z",
+  "analysisEndTime": "2025-12-13T01:18:05.2783975Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 3,
+      "issues": 5,
+      "incidents": 37,
+      "effort": 37
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 3,
+        "Optional": 1,
+        "Potential": 33,
+        "Information": 0
+      },
+      "category": {
+        "Project": 3,
+        "NuGet": 8,
+        "Api": 26
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 31,
+      "properties": {
+        "appName": "GroceryShop.Angular",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "netcoreapp3.1"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 35,
+        "numberOfCodeFiles": 9,
+        "linesTotal": 35689,
+        "linesOfCode": 511,
+        "totalApiScanned": 492,
+        "minLinesOfCodeToChange": 26,
+        "maxLinesOfCodeToChange": 26
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "f2c6ef51-14c4-48ca-8a2f-af66145e6fce",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.1",
+              "protected": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+            "snippet": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.1",
+            "protectedSnippet": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.1",
+            "label": "Microsoft.AspNetCore.Mvc.NewtonsoftJson 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d692dd03-b7db-44a7-a030-3616b2ff9e4f",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.SpaServices.Extensions, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.SpaServices.Extensions, and replace with new package Microsoft.AspNetCore.SpaServices.Extensions 10.0.1",
+              "protected": "Microsoft.AspNetCore.SpaServices.Extensions, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.SpaServices.Extensions, and replace with new package Microsoft.AspNetCore.SpaServices.Extensions 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+            "snippet": "Microsoft.AspNetCore.SpaServices.Extensions, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.SpaServices.Extensions, and replace with new package Microsoft.AspNetCore.SpaServices.Extensions 10.0.1",
+            "protectedSnippet": "Microsoft.AspNetCore.SpaServices.Extensions, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.SpaServices.Extensions, and replace with new package Microsoft.AspNetCore.SpaServices.Extensions 10.0.1",
+            "label": "Microsoft.AspNetCore.SpaServices.Extensions 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6a88f98d-52c0-452b-a721-8ecae8d8692a",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.1",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.1",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.1",
+            "label": "Microsoft.EntityFrameworkCore.Design 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b7541fbf-6563-42e2-a6bf-abc88f17a3f3",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1",
+              "protected": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1",
+            "label": "Microsoft.EntityFrameworkCore.Relational 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Relational",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "43aa6b00-e39e-4ccf-bf41-10d64e1327db",
+          "ruleId": "Project.0002",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+            "snippet": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "netcoreapp3.1",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "211e13b1-466d-4f82-bdf0-8262df9a7711",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "spa.UseAngularCliServer(npmScript: \u0022start\u0022);",
+              "protected": "T:Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "spa.UseAngularCliServer(npmScript: \u0022start\u0022);",
+            "protectedSnippet": "T:Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions",
+            "label": "T:Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 143,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "a23845e7-91f5-4942-81c8-3914f2970195",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "spa.UseAngularCliServer(npmScript: \u0022start\u0022);",
+              "protected": "M:Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(Microsoft.AspNetCore.SpaServices.ISpaBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "spa.UseAngularCliServer(npmScript: \u0022start\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(Microsoft.AspNetCore.SpaServices.ISpaBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(Microsoft.AspNetCore.SpaServices.ISpaBuilder,System.String)",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 143,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "9acac4ef-e4f6-40ac-b743-8ca651eb014f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "spa.Options.SourcePath = \u0022ClientApp\u0022;",
+              "protected": "T:Microsoft.AspNetCore.SpaServices.SpaOptions"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "spa.Options.SourcePath = \u0022ClientApp\u0022;",
+            "protectedSnippet": "T:Microsoft.AspNetCore.SpaServices.SpaOptions",
+            "label": "T:Microsoft.AspNetCore.SpaServices.SpaOptions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 135,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "54522973-89e7-4a24-bbc7-8b1081a2b361",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "spa.Options.SourcePath = \u0022ClientApp\u0022;",
+              "protected": "P:Microsoft.AspNetCore.SpaServices.ISpaBuilder.Options"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "spa.Options.SourcePath = \u0022ClientApp\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.SpaServices.ISpaBuilder.Options",
+            "label": "P:Microsoft.AspNetCore.SpaServices.ISpaBuilder.Options",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 135,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "100f64f3-ad17-432c-a9d5-49d06ea23971",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "spa.Options.SourcePath = \u0022ClientApp\u0022;",
+              "protected": "P:Microsoft.AspNetCore.SpaServices.SpaOptions.SourcePath"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "spa.Options.SourcePath = \u0022ClientApp\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.SpaServices.SpaOptions.SourcePath",
+            "label": "P:Microsoft.AspNetCore.SpaServices.SpaOptions.SourcePath",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 135,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "a709c1b0-4067-4124-8339-824cd3b4df33",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseSpa(spa =\u003E\r\n            {\r\n                // To learn more about options for serving an Angular SPA from ASP.NET Core,\r\n                // see https://go.microsoft.com/fwlink/?linkid=864501\r\n\r\n                spa.Options.SourcePath = \u0022ClientApp\u0022;\r\n\r\n                if (env.IsDevelopment())\r\n                {\r\n                    /*\r\n                     * Comentar linha para executar o angular diretamente do angulur cli (ng build)\r\n                     * npm start - executar app\r\n                     */\r\n                    spa.UseAngularCliServer(npmScript: \u0022start\u0022);\r\n                    //spa.UseProxyToSpaDevelopmentServer(\u0022http://localhost:4200/\u0022);\r\n                }\r\n            });",
+              "protected": "T:Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "app.UseSpa(spa =\u003E\r\n            {\r\n                // To learn more about options for serving an Angular SPA from ASP.NET Core,\r\n                // see https://go.microsoft.com/fwlink/?linkid=864501\r\n\r\n                spa.Options.SourcePath = \u0022ClientApp\u0022;\r\n\r\n                if (env.IsDevelopment())\r\n                {\r\n                    /*\r\n                     * Comentar linha para executar o angular diretamente do angulur cli (ng build)\r\n                     * npm start - executar app\r\n                     */\r\n                    spa.UseAngularCliServer(npmScript: \u0022start\u0022);\r\n                    //spa.UseProxyToSpaDevelopmentServer(\u0022http://localhost:4200/\u0022);\r\n                }\r\n            });",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions",
+            "label": "T:Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 130,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "351e939d-7f49-417e-bf8c-5a48eff338c0",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseSpa(spa =\u003E\r\n            {\r\n                // To learn more about options for serving an Angular SPA from ASP.NET Core,\r\n                // see https://go.microsoft.com/fwlink/?linkid=864501\r\n\r\n                spa.Options.SourcePath = \u0022ClientApp\u0022;\r\n\r\n                if (env.IsDevelopment())\r\n                {\r\n                    /*\r\n                     * Comentar linha para executar o angular diretamente do angulur cli (ng build)\r\n                     * npm start - executar app\r\n                     */\r\n                    spa.UseAngularCliServer(npmScript: \u0022start\u0022);\r\n                    //spa.UseProxyToSpaDevelopmentServer(\u0022http://localhost:4200/\u0022);\r\n                }\r\n            });",
+              "protected": "M:Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.SpaServices.ISpaBuilder})"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "app.UseSpa(spa =\u003E\r\n            {\r\n                // To learn more about options for serving an Angular SPA from ASP.NET Core,\r\n                // see https://go.microsoft.com/fwlink/?linkid=864501\r\n\r\n                spa.Options.SourcePath = \u0022ClientApp\u0022;\r\n\r\n                if (env.IsDevelopment())\r\n                {\r\n                    /*\r\n                     * Comentar linha para executar o angular diretamente do angulur cli (ng build)\r\n                     * npm start - executar app\r\n                     */\r\n                    spa.UseAngularCliServer(npmScript: \u0022start\u0022);\r\n                    //spa.UseProxyToSpaDevelopmentServer(\u0022http://localhost:4200/\u0022);\r\n                }\r\n            });",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.SpaServices.ISpaBuilder})",
+            "label": "M:Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.SpaServices.ISpaBuilder})",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 130,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "81dff35d-8a06-4ee9-9a73-879555ef11cf",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseSpaStaticFiles();",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "app.UseSpaStaticFiles();",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 108,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "7704cd78-0693-483e-9a9c-f26df3bc9187",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseSpaStaticFiles();",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions.UseSpaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "app.UseSpaStaticFiles();",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions.UseSpaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "label": "M:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions.UseSpaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 108,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "41d7249f-08ae-432c-b500-576ceaf9007e",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 99,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "bdceb382-dd7f-43f1-a06f-f809c3876db7",
+          "ruleId": "Api.0002",
+          "description": "This API is obsolete and will be removed in a future version. Consider removing usages. ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+              "protected": "T:Microsoft.AspNetCore.Mvc.CompatibilityVersion"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.CompatibilityVersion",
+            "label": "T:Microsoft.AspNetCore.Mvc.CompatibilityVersion",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://aka.ms/aspnetcore-warnings/ASP5001",
+                "isCustom": false
+              }
+            ],
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "459f73ee-63ec-42d6-b35a-723973210711",
+          "ruleId": "Api.0002",
+          "description": "This API is obsolete and will be removed in a future version. Consider removing usages. ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+              "protected": "T:Microsoft.AspNetCore.Mvc.CompatibilityVersion"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.CompatibilityVersion",
+            "label": "T:Microsoft.AspNetCore.Mvc.CompatibilityVersion",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://aka.ms/aspnetcore-warnings/ASP5001",
+                "isCustom": false
+              }
+            ],
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "31ea2606-8264-49ab-b615-b3b0fe30c3ed",
+          "ruleId": "Api.0002",
+          "description": "This CompatibilityVersion value is obsolete. ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+              "protected": "F:Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+            "protectedSnippet": "F:Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0",
+            "label": "F:Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0",
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "8c7c1bc7-7f4a-4c1a-a879-6d1ec2dbca63",
+          "ruleId": "Api.0002",
+          "description": "This API is obsolete and will be removed in a future version. Consider removing usages. ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.SetCompatibilityVersion(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.AspNetCore.Mvc.CompatibilityVersion)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "services.AddMvc()\r\n                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.SetCompatibilityVersion(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.AspNetCore.Mvc.CompatibilityVersion)",
+            "label": "M:Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.SetCompatibilityVersion(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.AspNetCore.Mvc.CompatibilityVersion)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://aka.ms/aspnetcore-warnings/ASP5001",
+                "isCustom": false
+              }
+            ],
+            "line": 64,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "4d5c66f9-a9c9-4ca9-a06b-3947ad6eb3e0",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "configuration.RootPath = \u0022ClientApp/dist\u0022;",
+              "protected": "P:Microsoft.AspNetCore.SpaServices.StaticFiles.SpaStaticFilesOptions.RootPath"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "configuration.RootPath = \u0022ClientApp/dist\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.SpaServices.StaticFiles.SpaStaticFilesOptions.RootPath",
+            "label": "P:Microsoft.AspNetCore.SpaServices.StaticFiles.SpaStaticFilesOptions.RootPath",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 61,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "36634203-8619-48a4-842f-51e106540483",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddSpaStaticFiles(configuration =\u003E\r\n            {\r\n                configuration.RootPath = \u0022ClientApp/dist\u0022;\r\n            });",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "services.AddSpaStaticFiles(configuration =\u003E\r\n            {\r\n                configuration.RootPath = \u0022ClientApp/dist\u0022;\r\n            });",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 59,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6c8f89a6-bc6d-4b28-b44a-db9ff2d95baa",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6. Add package reference to Microsoft.AspNetCore.SpaServices.Extensions, 8.0.6",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddSpaStaticFiles(configuration =\u003E\r\n            {\r\n                configuration.RootPath = \u0022ClientApp/dist\u0022;\r\n            });",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions.AddSpaStaticFiles(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.SpaServices.StaticFiles.SpaStaticFilesOptions})"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "services.AddSpaStaticFiles(configuration =\u003E\r\n            {\r\n                configuration.RootPath = \u0022ClientApp/dist\u0022;\r\n            });",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions.AddSpaStaticFiles(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.SpaServices.StaticFiles.SpaStaticFilesOptions})",
+            "label": "M:Microsoft.Extensions.DependencyInjection.SpaStaticFilesExtensions.AddSpaStaticFiles(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.SpaServices.StaticFiles.SpaStaticFilesOptions})",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SpaServices.Extensions",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 59,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3387d7a1-0bf1-4141-9732-3a03cc6634cc",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "24a0903e-feba-44da-b81d-d9dce01f8950",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "5846e41d-1f2e-4798-97b9-f77303372750",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "691f4e12-ad77-4f6b-bcdf-98bb7983d2a9",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "4ddc57db-9ebf-4c83-b9e5-b5921a9cff78",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "2a5d5568-410c-478b-bfaa-85c5411c09bc",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "cd7e8664-5151-4cd7-b63b-91758b5418d2",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "b4313edb-1b29-4275-b7bf-c4e4bde94176",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "c6557b15-52da-4e60-a452-cb50db48956a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "GroceryShop.Angular\\GroceryShop.Angular.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Angular\\Startup.cs",
+            "snippet": "c.SwaggerDoc(\u0022v1\u0022, new OpenApiInfo\r\n                {\r\n                    Title = \u0022Grocery Shop\u0022,\r\n                    Version = \u0022v1\u0022,\r\n                    Description = \u0022A simple example ASP.NET Core Web API\u0022,\r\n                    TermsOfService = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    Contact = new OpenApiContact\r\n                    {\r\n                        Name = \u0022Emerson Bilieri\u0022,\r\n                        Email = string.Empty,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    },\r\n                    License = new OpenApiLicense\r\n                    {\r\n                        Name = \u0022Use under LICX\u0022,\r\n                        Url = new Uri(\u0022https://github.com/ebilieri\u0022),\r\n                    }\r\n\r\n                });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 36,
+            "column": 16
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "GroceryShop.Dominio\\GroceryShop.Dominio.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "GroceryShop.Dominio",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "netcoreapp3.1"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 11,
+        "numberOfCodeFiles": 11,
+        "linesTotal": 254,
+        "linesOfCode": 254,
+        "totalApiScanned": 217,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "cd440d35-7419-4fd8-8d7b-0ca744b0ecd9",
+          "ruleId": "Project.0002",
+          "projectPath": "GroceryShop.Dominio\\GroceryShop.Dominio.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Dominio\\GroceryShop.Dominio.csproj",
+            "snippet": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "netcoreapp3.1",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 5,
+      "properties": {
+        "appName": "GroceryShop.Repositorio",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "netcoreapp3.1"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 21,
+        "numberOfCodeFiles": 21,
+        "linesTotal": 1669,
+        "linesOfCode": 1669,
+        "totalApiScanned": 1754,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "d749a4b2-dd13-4854-93bb-482d0fb29726",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Proxies, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 10.0.1",
+              "protected": "Microsoft.EntityFrameworkCore.Proxies, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Proxies, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 10.0.1",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Proxies, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Proxies, and replace with new package Microsoft.EntityFrameworkCore.Proxies 10.0.1",
+            "label": "Microsoft.EntityFrameworkCore.Proxies 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Proxies",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "294ab257-d35d-4a22-a600-88f0350f3807",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1",
+              "protected": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Relational, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Relational, and replace with new package Microsoft.EntityFrameworkCore.Relational 10.0.1",
+            "label": "Microsoft.EntityFrameworkCore.Relational 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Relational",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "1995579c-9c4c-4a26-8bce-135c16fae3f2",
+          "ruleId": "NuGet.0002",
+          "projectPath": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Tools, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.1",
+              "protected": "Microsoft.EntityFrameworkCore.Tools, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.1"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Tools, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.1",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Tools, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.1",
+            "label": "Microsoft.EntityFrameworkCore.Tools 3.1.1",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Tools",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ca6cbdfd-15ff-4ce2-af1a-5f5d17169d88",
+          "ruleId": "NuGet.0005",
+          "projectPath": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Pomelo.EntityFrameworkCore.MySql, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nDeve ser substitu\u00EDdo.\nRemove Pomelo.EntityFrameworkCore.MySql, and replace with new package Pomelo.EntityFrameworkCore.MySql, 9.0.0",
+              "protected": "Pomelo.EntityFrameworkCore.MySql, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nDeve ser substitu\u00EDdo.\nRemove Pomelo.EntityFrameworkCore.MySql, and replace with new package Pomelo.EntityFrameworkCore.MySql, 9.0.0"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+            "snippet": "Pomelo.EntityFrameworkCore.MySql, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nDeve ser substitu\u00EDdo.\nRemove Pomelo.EntityFrameworkCore.MySql, and replace with new package Pomelo.EntityFrameworkCore.MySql, 9.0.0",
+            "protectedSnippet": "Pomelo.EntityFrameworkCore.MySql, 3.1.1\n\nRecomenda\u00E7\u00E3o:\n\nDeve ser substitu\u00EDdo.\nRemove Pomelo.EntityFrameworkCore.MySql, and replace with new package Pomelo.EntityFrameworkCore.MySql, 9.0.0",
+            "label": "Pomelo.EntityFrameworkCore.MySql 3.1.1",
+            "properties": {
+              "PackageId": "Pomelo.EntityFrameworkCore.MySql",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "2890c267-0606-4959-94eb-59d7e5b2c1c2",
+          "ruleId": "Project.0002",
+          "projectPath": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "GroceryShop.Repositorio\\GroceryShop.Repositorio.csproj",
+            "snippet": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: netcoreapp3.1\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "netcoreapp3.1",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "A estrutura de destino do projeto precisa ser alterada para a nova estrutura de destino que voc\u00EA selecionou para essa atualiza\u00E7\u00E3o.\n\nDurante a atualiza\u00E7\u00E3o, a estrutura de destino ser\u00E1 ajustada para a plataforma correspondente, quando aplic\u00E1vel. Em alguns casos, o projeto ter\u00E1 v\u00E1rias estruturas de destino ap\u00F3s\u00A0a atualiza\u00E7\u00E3o se estiver usando recursos que agora t\u00EAm suas pr\u00F3prias plataformas nas estruturas modernas do .NET (Windows, iOS, Android etc.).",
+      "label": "As estruturas de destino do projeto precisam ser alteradas",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Vis\u00E3o geral da portabilidade do .NET Framework para o .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": "SDKs do projeto .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "A atualiza\u00E7\u00E3o do pacote NuGet \u00E9 recomendada para a estrutura de destino selecionada.\n\nRecomenda-se que os pacotes padr\u00E3o do .NET tenham vers\u00F5es correspondentes \u00E0 vers\u00E3o do .NET que o projeto se destina.\n\nAlguns outros pacotes tamb\u00E9m s\u00E3o conhecidos por funcionar melhor para as estruturas de destino selecionadas.",
+      "label": "Recomenda-se a atualiza\u00E7\u00E3o do pacote NuGet",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "O pacote NuGet foi preterido.\n\nConsulte sua documenta\u00E7\u00E3o e verifique se h\u00E1 alguma orienta\u00E7\u00E3o para a substitui\u00E7\u00E3o da funcionalidade fornecida por esse pacote.",
+      "label": "O pacote NuGet foi preterido",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Altera\u00E7\u00F5es interruptivas no .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    }
+  }
+}
