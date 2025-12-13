@@ -28,8 +28,19 @@ export class LojaProdutoComponent implements OnInit {
   }
 
   public comprar() {
-    this.carrinhoCompras.adicionar(this.produto);
-    this.router.navigate(['/loja-efetivar-compra']);
+    console.log('Método comprar() chamado', this.produto);
+    
+    if (!this.produto) {
+      console.error('Produto não encontrado');
+      return;
+    }
+    
+    try {
+      this.carrinhoCompras.adicionar(this.produto);
+      this.router.navigate(['/loja-efetivar-compra']);
+    } catch (error) {
+      console.error('Erro ao adicionar produto ao carrinho:', error);
+    }
   }
 
 }

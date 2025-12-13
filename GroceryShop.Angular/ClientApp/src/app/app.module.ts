@@ -3,9 +3,9 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { TruncateModule } from 'ng2-truncate';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideToastr, ToastrModule } from 'ngx-toastr';
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
@@ -29,6 +29,7 @@ import { LojaProdutoComponent } from './loja/produto/loja.produto.component';
 import { LojaEfetivarComponent } from './loja/efetivar/loja.efetivar.component';
 import { PedidoServico } from './servicos/pedido/pedido.servico';
 import { LojaCompraFinalizadaComponent } from './loja/efetivar/loja.compra.finalizada.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 
 @NgModule({
@@ -46,13 +47,13 @@ import { LojaCompraFinalizadaComponent } from './loja/efetivar/loja.compra.final
     LojaPesquisaComponent,
     LojaProdutoComponent,
     LojaEfetivarComponent,
-    LojaCompraFinalizadaComponent
+    LojaCompraFinalizadaComponent,
+    TruncatePipe
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    BrowserModule,
     HttpClientModule,
     FormsModule,
-    TruncateModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       timeOut: 10000,

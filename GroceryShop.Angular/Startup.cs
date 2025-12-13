@@ -61,7 +61,7 @@ namespace GroceryShop.Angular
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "ClientApp/dist/GroceryShop.Angular/browser";
             });
 
             // String de conex�o com o Banco de dados (MySql)
@@ -137,9 +137,11 @@ namespace GroceryShop.Angular
                     /*
                      * Angular CLI habilitado - Node.js v24.12.0 instalado
                      * npm start - executar app
+                     * 
+                     * Angular 17 usa um servidor de desenvolvimento diferente,
+                     * então usamos proxy direto em vez de UseAngularCliServer
                      */
-                    spa.UseAngularCliServer(npmScript: "start");
-                    //spa.UseProxyToSpaDevelopmentServer("http://localhost:4200/");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200/");
                 }
             });
 
