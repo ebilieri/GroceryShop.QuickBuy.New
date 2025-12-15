@@ -48,6 +48,35 @@ O GroceryShop.QuickBuy é uma aplicação fullstack que simula um e-commerce com
 - **RxJS 7.8.1** - Programação reativa
 - **Angular CLI 19.0.6** - Ferramentas de desenvolvimento
 
+## 🧪 Testes
+
+O projeto possui uma suíte completa de **54 testes unitários** cobrindo Controllers, Repositórios e Entidades de Domínio.
+
+### Executar Testes
+```bash
+cd GroceryShop.Tests
+dotnet test
+```
+
+### Cobertura de Código
+```bash
+# Executar testes com cobertura
+dotnet test --collect:"XPlat Code Coverage"
+
+# Gerar relatório HTML
+reportgenerator -reports:"TestResults\*\coverage.cobertura.xml" -targetdir:"CoverageReport" -reporttypes:Html
+```
+
+### Estatísticas
+- ✅ **54 testes** - 100% de aprovação
+- 📊 **Cobertura Global**: ~23% (incluindo infraestrutura)
+- 🎯 **Cobertura de Código Testável**: ~80-85%
+- ⚡ **Tempo de Execução**: ~5.4 segundos
+
+Ver relatório completo: [TESTE_REPORT.md](TESTE_REPORT.md)
+
+---
+
 ## 🏗️ Arquitetura
 
 A aplicação segue uma arquitetura em camadas (Clean Architecture) com separação de responsabilidades:
