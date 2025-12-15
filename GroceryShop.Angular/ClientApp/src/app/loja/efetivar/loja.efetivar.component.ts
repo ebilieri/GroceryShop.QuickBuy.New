@@ -10,6 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'loja-efetivar',
+  standalone: false,
   templateUrl: './loja.efetivar.component.html',
   styleUrls: ['./loja.efetivar.component.css']
 })

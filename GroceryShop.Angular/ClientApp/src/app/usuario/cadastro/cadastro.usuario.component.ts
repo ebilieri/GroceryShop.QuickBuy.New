@@ -4,6 +4,7 @@ import { UsuarioServico } from '../../servicos/usuario/usuario.servico';
 
 @Component({
   selector: 'cadastro-usuario',
+  standalone: false,
   templateUrl: './cadastro.usuario.component.html',
   styleUrls: ['./cadastro.usuario.component.css']
 })

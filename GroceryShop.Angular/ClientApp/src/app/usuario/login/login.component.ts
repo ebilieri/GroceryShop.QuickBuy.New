@@ -5,6 +5,7 @@ import { UsuarioServico } from '../../servicos/usuario/usuario.servico';
 
 @Component({
   selector: 'app-login',
+  standalone: false,
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
