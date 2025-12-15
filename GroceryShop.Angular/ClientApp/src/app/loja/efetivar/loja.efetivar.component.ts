@@ -22,6 +22,14 @@ export class LojaEfetivarComponent implements OnInit {
   ngOnInit(): void {
     this.carrinhoCompras = new LojaCarrinhoCompras();
     this.produtos = this.carrinhoCompras.obterProdutos();
+    
+    // Garantir que cada produto tenha precoOriginal preservado
+    this.produtos.forEach(produto => {
+      if (!produto.precoOriginal) {
+        produto.precoOriginal = produto.preco;
+      }
+    });
+    
     this.atualizarTotal();
   }
 
@@ -54,7 +62,11 @@ export class LojaEfetivarComponent implements OnInit {
   }
 
   public atualizarTotal() {
-    this.total = this.produtos.reduce((acc, produto) => acc + produto.preco, 0);
+    this.total = this.produtos.reduce((acc, produto) => {
+      const quantidade = produto.quantidade || 1;
+      const precoUnitario = produto.precoOriginal || produto.preco;
+      return acc + (precoUnitario * quantidade);
+    }, 0);
     if (!this.carrinhoCompras.temItensCarrinhoCompras())
       this.router.navigate(['/']);
   }

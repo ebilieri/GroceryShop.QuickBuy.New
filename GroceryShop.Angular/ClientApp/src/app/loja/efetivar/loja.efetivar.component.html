@@ -29,7 +29,7 @@
               </div>
             </td>
             <td class="text-right">
-              <strong class="text-danger">{{p.preco | currency:'BRL':'symbol':'0.2-2':'pt'}}</strong>
+              <strong class="text-danger">{{(p.precoOriginal || p.preco) * (p.quantidade || 1) | currency:'BRL':'symbol':'0.2-2':'pt'}}</strong>
             </td>
           </tr>
         </tbody>
