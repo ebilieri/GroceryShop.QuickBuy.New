@@ -8,6 +8,16 @@ export class LojaCarrinhoCompras {
   public adicionar(produto: Produto) {
     var produtosLocalStorage = localStorage.getItem("produtosLocalStorage");
 
+    // Garantir que o produto tenha quantidade definida
+    if (!produto.quantidade || produto.quantidade === 0) {
+      produto.quantidade = 1;
+    }
+
+    // Preservar o preço original (unitário) do produto
+    if (!produto.precoOriginal) {
+      produto.precoOriginal = produto.preco;
+    }
+
     if (!produtosLocalStorage) {
       // se não existir nada dentro do localStorage
       this.produtos.push(produto);
@@ -15,10 +25,16 @@ export class LojaCarrinhoCompras {
       // se ja existir pelo menos um item armazenado na sessao(produtosLocalStorage)      
       this.produtos = JSON.parse(produtosLocalStorage);
 
-      //retornar todos os produtos diferentes do atual
-      //var exist = this.produtos.filter(p=> p.id == produto.id);
-      //alert(exist);
-      this.produtos.push(produto);
+      // Verificar se o produto já existe no carrinho
+      var produtoExistente = this.produtos.find(p => p.id == produto.id);
+      
+      if (produtoExistente) {
+        // Se o produto já existe, incrementar a quantidade
+        produtoExistente.quantidade += produto.quantidade;
+      } else {
+        // Se não existe, adicionar como novo item
+        this.produtos.push(produto);
+      }
     }
 
     localStorage.setItem("produtosLocalStorage", JSON.stringify(this.produtos));
