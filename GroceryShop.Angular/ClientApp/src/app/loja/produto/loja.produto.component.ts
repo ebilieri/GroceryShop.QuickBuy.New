@@ -6,6 +6,7 @@ import { LojaCarrinhoCompras } from '../carrinho-compras/loja.carrinho.compras';
 
 @Component({
   selector: 'loja-app-produto',
+  standalone: false,
   templateUrl: './loja.produto.component.html',
   styleUrls: ['./loja.produto.component.css']
 })

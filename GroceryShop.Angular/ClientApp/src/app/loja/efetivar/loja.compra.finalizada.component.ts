@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   templateUrl: './loja.compra.finalizada.component.html',
   styleUrls: ['./loja.compra.finalizada.component.css']
 })

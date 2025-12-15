@@ -5,6 +5,7 @@ import { LojaCarrinhoCompras } from '../loja/carrinho-compras/loja.carrinho.comp
 
 @Component({
   selector: 'app-nav-menu',
+  standalone: false,
   templateUrl: './nav-menu.component.html',
   styleUrls: ['./nav-menu.component.css']
 })

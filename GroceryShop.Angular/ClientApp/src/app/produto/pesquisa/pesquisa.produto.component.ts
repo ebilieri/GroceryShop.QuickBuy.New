@@ -6,6 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'pesquisa-produto',
+  standalone: false,
   templateUrl: './pesquisa.produto.component.html',
   styleUrls: ['./pesquisa.produto.component.css']
 })
